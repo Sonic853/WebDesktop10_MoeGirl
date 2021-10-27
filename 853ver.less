@@ -1,0 +1,30 @@
+#Desktop10 {
+    @theme: #10893e;
+    @menuColor: #0b5c2a;
+    @navColor: #08421e;
+    @barColor: rgba(0, 0, 0, 0.8);
+    background-image: url("https://img.moegirl.org.cn/common/5/53/Code_Sonic853_1080p.png");
+    > .Desktop:before {
+        content: "Background By Sonic853";
+        position: absolute;
+        bottom: 35px;
+        right: 10px;
+        cursor: default;
+        color: white;
+    }
+    > .Window {
+        border: 1px solid @theme;
+        > .Top {
+            background-color: @theme;
+        }
+    }
+    > .Taskbar {
+        background-color: @barColor;
+    }
+    > .StartMenu {
+        background-color: @menuColor;
+        > .LeftNav:hover {
+            background-color: @navColor;
+        }
+    }
+}

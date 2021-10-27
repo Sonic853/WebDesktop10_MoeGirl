@@ -1,0 +1,381 @@
+#Desktop10 {
+  width: 100%;
+  height: 40vw;
+  min-height: 600px;
+  background-image: url("https://img.moegirl.org.cn/common/thumb/e/ef/Moegirl2021FallDesktop.png/1920px-Moegirl2021FallDesktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+#Desktop10 > .Desktop {
+  user-select: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding-top: 5px;
+}
+#Desktop10 > .Desktop > .App {
+  display: inline-block;
+  width: 76px;
+  height: 102px;
+}
+#Desktop10 > .Desktop > .App > a,
+#Desktop10 > .Desktop > .App div {
+  color: #fff;
+  font-weight: normal;
+  width: 100%;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0);
+  position: relative;
+}
+#Desktop10 > .Desktop > .App > a > .Icon,
+#Desktop10 > .Desktop > .App div > .Icon {
+  width: 46px;
+  height: 46px;
+  margin: 0 14px;
+}
+#Desktop10 > .Desktop > .App > a > .Icon > img,
+#Desktop10 > .Desktop > .App div > .Icon > img {
+  width: 100%;
+}
+#Desktop10 > .Desktop > .App > a > .Text,
+#Desktop10 > .Desktop > .App div > .Text {
+  text-align: center;
+  text-shadow: 1px 1px 2px #000;
+}
+#Desktop10 > .Desktop > .App > a > .textToggleDisplayButtons,
+#Desktop10 > .Desktop > .App div > .textToggleDisplayButtons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#Desktop10 > .Desktop > .App > a:hover,
+#Desktop10 > .Desktop > .App > div:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.36);
+}
+#Desktop10 > .Desktop:after {
+  content: "WebDesktop10 萌娘百科版";
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: default;
+  color: white;
+}
+#Desktop10 > .Window {
+  position: absolute;
+  min-width: 10px;
+  background-color: #fff;
+  border: 1px solid #0078d7;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  z-index: 8700;
+}
+#Desktop10 > .Window > .Top {
+  background-color: #0078d7;
+  color: #fff;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  user-select: none;
+}
+#Desktop10 > .Window > .Top > .Title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+}
+#Desktop10 > .Window > .Top > .Close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45px;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+}
+#Desktop10 > .Window > .Top > .Close:hover {
+  background-color: #e81123;
+}
+#Desktop10 > .Window > .Top > .Close:active {
+  background-color: #8b0a14;
+}
+#Desktop10 > .Window > .Top + .Main {
+  margin-top: 30px;
+}
+#Desktop10 > .Window > .Main .wikiSignBtn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+#Desktop10 > .Alerts {
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+  width: 360px;
+}
+#Desktop10 > .Alerts > .Alert {
+  position: relative;
+}
+#Desktop10 > .Alerts > .Alert > .infoBox {
+  width: calc(100% - 10px);
+  margin: 0 0 10px 0;
+}
+#Desktop10 > .Alerts > .Alert > .infoBox > .infoBoxContent {
+  background-color: #fff;
+}
+#Desktop10 > .Alerts > .Alert > .Close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #000;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+}
+#Desktop10 > .Taskbar {
+  user-select: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40px;
+  background-color: rgba(0, 66, 117, 0.8);
+  z-index: 9999;
+}
+#Desktop10 > .Taskbar .StartBar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 48px;
+}
+#Desktop10 > .Taskbar .StartBar .StartButton {
+  width: 48px;
+  height: 40px;
+  background-image: url("https://img.moegirl.org.cn/common/0/0f/WebDesktop10LStartMenu.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#Desktop10 > .Taskbar .StartBar .StartButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#Desktop10 > .Taskbar .StartBar .StartButton:active {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+#Desktop10 > .StartMenu {
+  user-select: none;
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  width: 308px;
+  height: 400px;
+  /* overflow: hidden; */
+  background-color: #005a9e;
+  color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.79);
+  z-index: 9998;
+}
+#Desktop10 > .StartMenu > .LeftMenu {
+  position: absolute;
+  left: 48px;
+  top: 0;
+  bottom: 0;
+  width: 260px;
+  padding-top: 4px;
+  overflow-y: auto;
+}
+#Desktop10 > .StartMenu > .LeftMenu > .List > .ListTitle,
+#Desktop10 > .StartMenu > .LeftMenu > .List > a {
+  height: 36px;
+  line-height: 36px;
+  font-size: 12px;
+  padding-left: 16px;
+}
+#Desktop10 > .StartMenu > .LeftMenu > .List > .ListTitle:hover,
+#Desktop10 > .StartMenu > .LeftMenu > .List > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#Desktop10 > .StartMenu > .LeftMenu > .List > .ListTitle:active,
+#Desktop10 > .StartMenu > .LeftMenu > .List > a:active {
+  background-color: rgba(255, 255, 255, 0.17);
+  transform: scale(0.99);
+}
+#Desktop10 > .StartMenu > .LeftMenu > .List > a {
+  padding-left: 14px;
+  display: flex;
+  color: #fff;
+}
+#Desktop10 > .StartMenu > .LeftMenu > .List > a > .Ico {
+  width: 32px;
+  height: 32px;
+  margin: 2px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: inline-block;
+  line-height: 32px;
+  text-align: center;
+}
+#Desktop10 > .StartMenu > .LeftMenu > .List > a > .Ico > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#Desktop10 > .StartMenu > .LeftMenu > .List > a > .Name {
+  display: inline-block;
+  padding-left: 6px;
+}
+#Desktop10 > .StartMenu > .LeftNav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 48px;
+  overflow: hidden;
+  font-size: 14px;
+}
+#Desktop10 > .StartMenu > .LeftNav > .More {
+  margin-top: 4px;
+}
+#Desktop10 > .StartMenu > .LeftNav > .More > .Btn {
+  width: 256px;
+  height: 48px;
+  line-height: 48px;
+  display: flex;
+}
+#Desktop10 > .StartMenu > .LeftNav > .More > .Btn > .Menuico {
+  display: inline-block;
+  width: 16px;
+  height: 9px;
+  line-height: 48px;
+  padding: 20px 16px 19px;
+}
+#Desktop10 > .StartMenu > .LeftNav > .More > .Btn > .Menuico > span {
+  display: block;
+  width: 16px;
+  height: 9px;
+}
+#Desktop10 > .StartMenu > .LeftNav > .More > .Btn > .Menuico > span > span {
+  display: block;
+  line-height: normal;
+  border-bottom: 1px solid #fff;
+}
+#Desktop10 > .StartMenu > .LeftNav > .More > .Btn > .Menuico > span > span + span {
+  margin-top: 3px;
+}
+#Desktop10 > .StartMenu > .LeftNav > .More > .Btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#Desktop10 > .StartMenu > .LeftNav > .More > .Btn:active {
+  background-color: rgba(255, 255, 255, 0.17);
+}
+#Desktop10 > .StartMenu > .LeftNav > .Bottom {
+  position: absolute;
+  width: 256px;
+  bottom: 0;
+  left: 0;
+}
+#Desktop10 > .StartMenu > .LeftNav > .Bottom > div,
+#Desktop10 > .StartMenu > .LeftNav > .Bottom a {
+  height: 48px;
+  line-height: 48px;
+  display: flex;
+  color: #fff;
+}
+#Desktop10 > .StartMenu > .LeftNav > .Bottom > div > .Userico,
+#Desktop10 > .StartMenu > .LeftNav > .Bottom a > .Userico {
+  display: inline-block;
+  width: 48px;
+  text-align: center;
+  position: relative;
+}
+#Desktop10 > .StartMenu > .LeftNav > .Bottom > div > .Userico > .img,
+#Desktop10 > .StartMenu > .LeftNav > .Bottom a > .Userico > .img {
+  display: inline-block;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#Desktop10 > .StartMenu > .LeftNav > .Bottom > div {
+  height: 48px;
+  line-height: 48px;
+  display: flex;
+}
+#Desktop10 > .StartMenu > .LeftNav > .Bottom > div > .Explorerico {
+  background-image: url("https://img.moegirl.org.cn/common/d/db/WebDesktop10FileExplorerWhite.png");
+}
+#Desktop10 > .StartMenu > .LeftNav > .Bottom > div > .Settingsico {
+  background-image: url("https://img.moegirl.org.cn/common/8/8d/WebDesktop10SettingsWhite.png");
+}
+#Desktop10 > .StartMenu > .LeftNav > .Bottom > div > .Powerico {
+  background-image: url("https://img.moegirl.org.cn/common/0/02/WebDesktop10PowerWhite.png");
+}
+#Desktop10 > .StartMenu > .LeftNav > .Bottom > div > .Explorerico,
+#Desktop10 > .StartMenu > .LeftNav > .Bottom > div > .Settingsico,
+#Desktop10 > .StartMenu > .LeftNav > .Bottom > div > .Powerico {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#Desktop10 > .StartMenu > .LeftNav > .Bottom > div:hover,
+#Desktop10 > .StartMenu > .LeftNav > .Bottom a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#Desktop10 > .StartMenu > .LeftNav > .Bottom > div:active,
+#Desktop10 > .StartMenu > .LeftNav > .Bottom a:active {
+  background-color: rgba(255, 255, 255, 0.17);
+}
+#Desktop10 > .StartMenu > .LeftNav:hover {
+  width: 256px;
+  background-color: #004275;
+}
+#Desktop10 > .StartMenu.textToggleDisplay-on {
+  display: block;
+}
+#Desktop10.minTaskbar > .Desktop {
+  bottom: 30px;
+}
+#Desktop10.minTaskbar > .Alerts {
+  bottom: 40px;
+}
+#Desktop10.minTaskbar > .Taskbar {
+  height: 30px;
+}
+#Desktop10.minTaskbar > .Taskbar .StartBar {
+  width: 36px;
+}
+#Desktop10.minTaskbar > .Taskbar .StartBar .StartButton {
+  width: 36px;
+  height: 30px;
+}
+#Desktop10.minTaskbar > .StartMenu {
+  bottom: 30px;
+}

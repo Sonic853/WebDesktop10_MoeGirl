@@ -1,0 +1,8 @@
+#Desktop10 > .Desktop:after {
+  content: "WebDesktop10 萌娘百科版";
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: default;
+  color: white;
+}
