@@ -141,7 +141,7 @@
             position: relative;
             > .infoBox {
                 width: calc(100% - 10px);
-                margin: 0 0 10px 0;
+                margin: 0;
                 > .infoBoxContent {
                     background-color: #fff;
                 }
@@ -156,6 +156,9 @@
                 line-height: 15px;
                 text-align: center;
             }
+        }
+        > .Alert + .Alert {
+            margin-top: 10px;
         }
     }
     > .Taskbar {

@@ -135,7 +135,7 @@
 }
 #Desktop10 > .Alerts > .Alert > .infoBox {
   width: calc(100% - 10px);
-  margin: 0 0 10px 0;
+  margin: 0;
 }
 #Desktop10 > .Alerts > .Alert > .infoBox > .infoBoxContent {
   background-color: #fff;
@@ -149,6 +149,9 @@
   height: 15px;
   line-height: 15px;
   text-align: center;
+}
+#Desktop10 > .Alerts > .Alert + .Alert {
+  margin-top: 10px;
 }
 #Desktop10 > .Taskbar {
   user-select: none;
