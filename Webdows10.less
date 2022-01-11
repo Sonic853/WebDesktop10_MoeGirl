@@ -1,398 +1,397 @@
 #Desktop10 {
-    // --theme: #0078d7;
-    // --menuColor: #005a9e;
-    // --navColor: #004275;
-    // --barColor: rgba(0, 66, 117, 0.8);
-    // 萌娘百科不支持变量语句
-    @theme: #0078d7;
-    @menuColor: #005a9e;
-    @navColor: #004275;
-    @barColor: rgba(0, 66, 117, 0.8);
-    width: 100%;
-    height: 40vw;
-    min-height: 600px;
-    background-image: url("https://img.moegirl.org.cn/common/thumb/e/ef/Moegirl2021FallDesktop.png/1920px-Moegirl2021FallDesktop.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
+  // --theme: #0078d7;
+  // --menuColor: #005a9e;
+  // --navColor: #004275;
+  // --barColor: rgba(0, 66, 117, 0.8);
+  // 萌娘百科不支持变量语句
+  @theme: #0078d7;
+  @menuColor: #005a9e;
+  @navColor: #004275;
+  @barColor: rgba(0, 66, 117, 0.8);
+  width: 100%;
+  height: 40vw;
+  min-height: 600px;
+  background-image: url("https://img.moegirl.org.cn/common/thumb/e/ef/Moegirl2021FallDesktop.png/1920px-Moegirl2021FallDesktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  > .Desktop {
+    user-select: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 40px;
     overflow: hidden;
-    > .Desktop {
-        user-select: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    // justify-content: flex-start;
+    // align-items: flex-start;
+    align-content: flex-start;
+    padding-top: 5px;
+    > .App {
+      display: inline-block;
+      width: 76px;
+      height: 102px;
+      > a,
+      > div {
+        color: #fff;
+        font-weight: normal;
+        width: 100%;
+        display: block;
+        border: 1px solid rgba(255, 255, 255, 0);
+        position: relative;
+        padding-right: 0;
+        > .Icon {
+          width: 46px;
+          height: 46px;
+          margin: 0 14px;
+          > img {
+            width: 100%;
+          }
+        }
+        > .Text {
+          text-align: center;
+          text-shadow: 1px 1px 2px #000;
+          max-height: 56px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        > .textToggleDisplayButtons {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.15);
+          border: 1px solid rgba(255, 255, 255, 0.36);
+        }
+      }
+    }
+    &:after {
+      content: "WebDesktop10 萌娘百科版";
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      cursor: default;
+      color: white;
+    }
+  }
+  > .Window {
+    position: absolute;
+    min-width: 10px;
+    background-color: #fff;
+    border: 1px solid @theme;
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 50%);
+    z-index: 8700;
+    > .Top {
+      background-color: @theme;
+      color: #fff;
+      height: 30px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      user-select: none;
+      > .Title {
         position: absolute;
-        left: 0;
-        right: 0;
         top: 0;
-        bottom: 40px;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        // justify-content: flex-start;
-        // align-items: flex-start;
-        align-content: flex-start;
-        padding-top: 5px;
-        > .App {
-            display: inline-block;
-            width: 76px;
-            height: 102px;
-            > a,
-            div {
-                color: #fff;
-                font-weight: normal;
-                width: 100%;
-                display: block;
-                border: 1px solid rgba(255, 255, 255, 0);
-                position: relative;
-                > .Icon {
-                    width: 46px;
-                    height: 46px;
-                    margin: 0 14px;
-                    > img {
-                        width: 100%;
-                    }
-                }
-                > .Text {
-                    text-align: center;
-                    text-shadow: 1px 1px 2px #000;
-                }
-                > .textToggleDisplayButtons {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                }
-            }
-            > a:hover,
-            > div:hover {
-                background-color: rgba(255, 255, 255, 0.15);
-                border: 1px solid rgba(255, 255, 255, 0.36);
-            }
-        }
-    }
-    > .Desktop:after {
-        content: "WebDesktop10 萌娘百科版";
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-        cursor: default;
-        color: white;
-    }
-    > .Window {
-        position: absolute;
-        min-width: 10px;
-        background-color: #fff;
-        border: 1px solid @theme;
-        box-shadow: 0px 0px 30px rgb(0 0 0 / 50%);
-        z-index: 8700;
-        > .Top {
-            background-color: @theme;
-            color: #fff;
-            height: 30px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            user-select: none;
-            > .Title {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                height: 30px;
-                line-height: 30px;
-                padding-left: 10px;
-            }
-            > .Close {
-                position: absolute;
-                right: 0;
-                top: 0;
-                width: 45px;
-                height: 29px;
-                line-height: 29px;
-                text-align: center;
-            }
-            > .Close:hover {
-                background-color: #e81123;
-            }
-            > .Close:active {
-                background-color: #8b0a14;
-            }
-        }
-        > .Top + .Main {
-            margin-top: 30px;
-        }
-        > .Main {
-            .wikiSignBtn {
-                position: absolute;
-                right: 10px;
-                top: 10px;
-            }
-        }
-    }
-    > .Alerts {
-        position: absolute;
-        bottom: 50px;
-        right: 10px;
-        width: 360px;
-        > .Alert {
-            position: relative;
-            > .infoBox {
-                width: calc(100% - 10px);
-                margin: 0;
-                > .infoBoxContent {
-                    background-color: #fff;
-                }
-            }
-            > .Close {
-                position: absolute;
-                top: 0;
-                right: 0;
-                color: #000;
-                width: 15px;
-                height: 15px;
-                line-height: 15px;
-                text-align: center;
-            }
-        }
-        > .Alert + .Alert {
-            margin-top: 10px;
-        }
-    }
-    > .Taskbar {
-        user-select: none;
-        position: absolute;
         left: 0;
         right: 0;
         bottom: 0;
-        height: 40px;
-        background-color: @barColor;
-        z-index: 9999;
-        // backdrop-filter: blur(3px);
-        .StartBar {
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 48px;
-            .StartButton {
-                width: 48px;
-                height: 40px;
-                background-image: url("https://img.moegirl.org.cn/common/0/0f/WebDesktop10LStartMenu.png");
-                background-repeat: no-repeat;
-                background-position: center;
-            }
-            .StartButton:hover {
-                background-color: rgba(255, 255, 255, 0.1);
-            }
-            .StartButton:active {
-                background-color: rgba(255, 255, 255, 0.05);
-            }
-        }
-    }
-    > .StartMenu {
-        user-select: none;
-        display: none;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 10px;
+      }
+      > .Close {
         position: absolute;
-        left: 0;
-        bottom: 40px;
-        width: 308px;
-        // width: 740px;
-        height: 400px;
-        /* overflow: hidden; */
-        background-color: @menuColor;
-        color: #fff;
-        box-shadow: 0px 0px 10px rgb(0 0 0 / 79%);
-        z-index: 9998;
-        > .LeftMenu {
-            position: absolute;
-            left: 48px;
-            top: 0;
-            bottom: 0;
-            width: 260px;
-            padding-top: 4px;
-            overflow-y: auto;
-            > .List {
-                > .ListTitle,
-                > a {
-                    height: 36px;
-                    line-height: 36px;
-                    font-size: 12px;
-                    padding-left: 16px;
-                }
-                > .ListTitle:hover,
-                > a:hover {
-                    background-color: rgba(255, 255, 255, 0.1);
-                }
-                > .ListTitle:active,
-                > a:active {
-                    background-color: rgba(255, 255, 255, 0.17);
-                    transform: scale(0.99);
-                }
-                > a {
-                    padding-left: 14px;
-                    display: flex;
-                    color: #fff;
-                    > .Ico {
-                        width: 32px;
-                        height: 32px;
-                        margin: 2px;
-                        overflow: hidden;
-                        background-color: rgba(255, 255, 255, 0.1);
-                        display: inline-block;
-                        line-height: 32px;
-                        text-align: center;
-                        > img {
-                            display: block;
-                            width: 100%;
-                            height: 100%;
-                        }
-                    }
-                    > .Name {
-                        display: inline-block;
-                        padding-left: 6px;
-                    }
-                }
-            }
+        right: 0;
+        top: 0;
+        width: 45px;
+        height: 29px;
+        line-height: 29px;
+        text-align: center;
+        &:hover {
+          background-color: #e81123;
         }
-        > .LeftNav {
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 48px;
+        &:active {
+          background-color: #8b0a14;
+        }
+      }
+    }
+    > .Top + .Main {
+      margin-top: 30px;
+    }
+    > .Main {
+      .wikiSignBtn {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+    }
+  }
+  > .Alerts {
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+    width: 360px;
+    > .Alert {
+      position: relative;
+      > .infoBox {
+        width: calc(100% - 10px);
+        margin: 0;
+        > .infoBoxContent {
+          background-color: #fff;
+        }
+      }
+      > .Close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #000;
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+        text-align: center;
+      }
+    }
+    > .Alert + .Alert {
+      margin-top: 10px;
+    }
+  }
+  > .Taskbar {
+    user-select: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    background-color: @barColor;
+    z-index: 9999;
+    // backdrop-filter: blur(3px);
+    .StartBar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 48px;
+      .StartButton {
+        width: 48px;
+        height: 40px;
+        background-image: url("https://img.moegirl.org.cn/common/0/0f/WebDesktop10LStartMenu.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+        }
+        &:active {
+          background-color: rgba(255, 255, 255, 0.05);
+        }
+      }
+    }
+  }
+  > .StartMenu {
+    user-select: none;
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    width: 308px;
+    // width: 740px;
+    height: 400px;
+    /* overflow: hidden; */
+    background-color: @menuColor;
+    color: #fff;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 79%);
+    z-index: 9998;
+    > .LeftMenu {
+      position: absolute;
+      left: 48px;
+      top: 0;
+      bottom: 0;
+      width: 260px;
+      padding-top: 4px;
+      overflow-y: auto;
+      > .List {
+        > .ListTitle,
+        > a {
+          height: 36px;
+          line-height: 36px;
+          font-size: 12px;
+          padding-left: 16px;
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+          }
+          &:active {
+            background-color: rgba(255, 255, 255, 0.17);
+            transform: scale(0.99);
+          }
+        }
+        > a {
+          padding-left: 14px;
+          display: flex;
+          color: #fff;
+          > .Ico {
+            width: 32px;
+            height: 32px;
+            margin: 2px;
             overflow: hidden;
-            font-size: 14px;
-            > .More {
-                margin-top: 4px;
-                > .Btn {
-                    width: 256px;
-                    height: 48px;
-                    line-height: 48px;
-                    display: flex;
-                    > .Menuico {
-                        display: inline-block;
-                        width: 16px;
-                        height: 9px;
-                        line-height: 48px;
-                        padding: 20px 16px 19px;
-                        > span {
-                            display: block;
-                            width: 16px;
-                            height: 9px;
-                            > span {
-                                display: block;
-                                line-height: normal;
-                                border-bottom: 1px solid #fff;
-                            }
-                            > span + span {
-                                margin-top: 3px;
-                            }
-                        }
-                    }
-                }
-                > .Btn:hover {
-                    background-color: rgba(255, 255, 255, 0.1);
-                }
-                > .Btn:active {
-                    background-color: rgba(255, 255, 255, 0.17);
-                }
+            background-color: rgba(255, 255, 255, 0.1);
+            display: inline-block;
+            line-height: 32px;
+            text-align: center;
+            > img {
+              display: block;
+              width: 100%;
+              height: 100%;
             }
-            > .Bottom {
-                position: absolute;
-                width: 256px;
-                bottom: 0;
-                left: 0;
-                > div,
-                a {
-                    height: 48px;
-                    line-height: 48px;
-                    display: flex;
-                    color: #fff;
-                    > .Userico {
-                        display: inline-block;
-                        width: 48px;
-                        text-align: center;
-                        // padding: 14px;
-                        position: relative;
-                        > .img {
-                            display: inline-block;
-                            position: absolute;
-                            top: 14px;
-                            left: 14px;
-                            width: 20px;
-                            height: 20px;
-                            line-height: 20px;
-                            border-radius: 50%;
-                            background-color: rgba(255, 255, 255, 0.1);
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            background-position: center;
-                        }
-                    }
-                }
-                > div {
-                    height: 48px;
-                    line-height: 48px;
-                    display: flex;
-                    > .Explorerico {
-                        background-image: url("https://img.moegirl.org.cn/common/d/db/WebDesktop10FileExplorerWhite.png");
-                    }
-                    > .Settingsico {
-                        background-image: url("https://img.moegirl.org.cn/common/8/8d/WebDesktop10SettingsWhite.png");
-                    }
-                    > .Powerico {
-                        background-image: url("https://img.moegirl.org.cn/common/0/02/WebDesktop10PowerWhite.png");
-                    }
-                    > .Explorerico,
-                    > .Settingsico,
-                    > .Powerico {
-                        display: inline-block;
-                        width: 48px;
-                        height: 48px;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                    }
-                }
-                > div:hover,
-                a:hover {
-                    background-color: rgba(255, 255, 255, 0.1);
-                }
-                > div:active,
-                a:active {
-                    background-color: rgba(255, 255, 255, 0.17);
-                }
+          }
+          > .Name {
+            display: inline-block;
+            padding-left: 6px;
+          }
+        }
+      }
+    }
+    > .LeftNav {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 48px;
+      overflow: hidden;
+      font-size: 14px;
+      > .More {
+        margin-top: 4px;
+        > .Btn {
+          width: 256px;
+          height: 48px;
+          line-height: 48px;
+          display: flex;
+          > .Menuico {
+            display: inline-block;
+            width: 16px;
+            height: 9px;
+            line-height: 48px;
+            padding: 20px 16px 19px;
+            > span {
+              display: block;
+              width: 16px;
+              height: 9px;
+              > span {
+                display: block;
+                line-height: normal;
+                border-bottom: 1px solid #fff;
+              }
+              > span + span {
+                margin-top: 3px;
+              }
             }
+          }
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+          }
+          &:active {
+            background-color: rgba(255, 255, 255, 0.17);
+          }
         }
-        > .LeftNav:hover {
-            width: 256px;
-            background-color: @navColor;
+      }
+      > .Bottom {
+        position: absolute;
+        width: 256px;
+        bottom: 0;
+        left: 0;
+        > div,
+        a {
+          height: 48px;
+          line-height: 48px;
+          display: flex;
+          color: #fff;
+          > .Userico {
+            display: inline-block;
+            width: 48px;
+            text-align: center;
+            // padding: 14px;
+            position: relative;
+            > .img {
+              display: inline-block;
+              position: absolute;
+              top: 14px;
+              left: 14px;
+              width: 20px;
+              height: 20px;
+              line-height: 20px;
+              border-radius: 50%;
+              background-color: rgba(255, 255, 255, 0.1);
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+            }
+          }
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+          }
+          &:active {
+            background-color: rgba(255, 255, 255, 0.17);
+          }
         }
+        > div {
+          height: 48px;
+          line-height: 48px;
+          display: flex;
+          > .Explorerico {
+            background-image: url("https://img.moegirl.org.cn/common/d/db/WebDesktop10FileExplorerWhite.png");
+          }
+          > .Settingsico {
+            background-image: url("https://img.moegirl.org.cn/common/8/8d/WebDesktop10SettingsWhite.png");
+          }
+          > .Powerico {
+            background-image: url("https://img.moegirl.org.cn/common/0/02/WebDesktop10PowerWhite.png");
+          }
+          > .Explorerico,
+          > .Settingsico,
+          > .Powerico {
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+      &:hover {
+        width: 256px;
+        background-color: @navColor;
+      }
     }
-    > .StartMenu.textToggleDisplay-on {
-        display: block;
-    }
+  }
+  > .StartMenu.textToggleDisplay-on {
+    display: block;
+  }
 }
 #Desktop10.minTaskbar {
-    > .Desktop {
-        bottom: 30px;
-    }
-    > .Alerts {
-        bottom: 40px;
-    }
-    > .Taskbar {
+  > .Desktop {
+    bottom: 30px;
+  }
+  > .Alerts {
+    bottom: 40px;
+  }
+  > .Taskbar {
+    height: 30px;
+    .StartBar {
+      width: 36px;
+      .StartButton {
+        width: 36px;
         height: 30px;
-        .StartBar {
-            width: 36px;
-            .StartButton {
-                width: 36px;
-                height: 30px;
-            }
-        }
+      }
     }
-    > .StartMenu {
-        bottom: 30px;
-    }
+  }
+  > .StartMenu {
+    bottom: 30px;
+  }
 }
